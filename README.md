@@ -1,9 +1,9 @@
 # Weather APP
+ ## :flower_playing_cards: Layout
+![image](https://user-images.githubusercontent.com/48324076/91666203-da14c180-eaf2-11ea-92bd-91cf7025eaa9.png)
 ## :pushpin: Description
 ###### 🚀 An implementation of weather app in wich you can find by country name, city, etc
-###### I used the fetch api to consome data 
-## :flower_playing_cards: Layout
-![image](https://user-images.githubusercontent.com/48324076/91666203-da14c180-eaf2-11ea-92bd-91cf7025eaa9.png)
+###### I used the fetch api to consome data
 ## :computer: Technologies
 - Vanilla.js or pure Javascript
 - CSS3 and HTML5
