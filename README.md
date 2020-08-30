@@ -10,7 +10,7 @@
 ```
 I used the free option of Openweatherapp
 I used two collection, first collection is current weather data and second is one call api
-for more information visit their platform [Openweathermap](https://openweathermap.org/api) 🤡❤
+for more information visit their platform https://openweathermap.org/api 🤡❤
 ```
 ## 📎 Improvements 
 - You can add hourly forecast option for each day of weeknd
