@@ -18,7 +18,7 @@ for more information visit their platform https://openweathermap.org/api 🤡❤
 - You can add hourly forecast option for each day of weeknd
 - You can add an option, whe the user click in an forecast of weeknd, the app display the equivalent forecast of the day
 - You can add a speech recognition for searching
-- You can add Axios and Babel using node.js to allow ours brows to run the app whitout problem
+- You can add Axios and Babel using node.js to allow ours browser to run the app whitout problem
 
 ## :heart_eyes: Issues
 Feel free to tinker with the project and change it your way
