@@ -6,6 +6,12 @@
 ## :computer: Technologies
 - Vanilla.js or pure Javascript
 - CSS3 and HTML5
+## 📍 API [Openweathermap](https://openweathermap.org/api)
+```
+I used the free option of Openweatherapp
+I used two collection, first collection is current weather data and second is one call api
+for more information visit their platform [Openweathermap](https://openweathermap.org/api) 🤡❤
+```
 ## 📎 Improvements 
 - You can add hourly forecast option for each day of weeknd
 - You can add an option, whe the user click in an forecast of weeknd, the app display the equivalent forecast of the day
