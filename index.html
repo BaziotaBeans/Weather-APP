@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Beans">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/93146aa192.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <!--css plugin for slider-->
+    <link rel="stylesheet" href="vendor/OwlCarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/OwlCarousel/css/owl.theme.default.min.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-top">
+            <a href="https://github.com/BaziotaBeans" target="_blank"><h1>Github</h1></a>
+            <div class="toggle-themes">
+                <input type="checkbox" class="toggle-themes-checkbox" id="chk">
+                <label for="chk" class="toggle-themes-shift">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                    <div class="shift"></div>
+                </label>
+            </div>
+        </div>
+        <div class="container-search">
+            <h1 class="weather-app-title">WEATHER APP</h1>
+            <div class="input-container purple-input-container">
+                <i class="fas fa-search"></i>
+                <form action="">
+                    <input type="text" placeholder="Pesquise uma cidade..." class="form-control">
+                </form>
+            </div>
+        </div>
+        
+        <div class="loader"></div>
+
+        <div class="container-error-msg">
+            <h1>Ops, cidade ou país inexistente</h1>
+            <h1>Tento outro por favor</h1>
+        </div>
+
+        <!-- Weather Principal Info -->
+        <div class="container-weather-principal-info">
+            <!-- <div class="weather-principal-info-1">
+                <h1 class="weather-city-name">Luanda,<span class="region">AO</span></h1>
+                <h2 class="current-date">Domingo 18 de Agosto</h2>
+                <div class="weather-temperature">
+                    <img src="img/moon.svg" alt="moon" class="weather-img">
+                    <div class="weather-temperature-info">
+                        <h1 class="weather-temperature-degree">22º</h1>
+                        <h3 class="weather-temperature-value">Céu limpo</h3>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="weather-principal-info-2">
+                <div class="weather-principal-base-info">
+                    <div class="weather-high">
+                        <h3>22º</h3>
+                        <h4>Alto</h4>
+                    </div>
+                    <div class="weather-wind">
+                        <h3>2.6mph</h3>
+                        <h4>Vento</h4>
+                    </div>
+                    <div class="weather-sunrise">
+                        <h3>06:16</h3>
+                        <h4>Nascer do Sol</h4>
+                    </div>
+                    <div class="weather-low">
+                        <h3>22º</h3>
+                        <h4>Baixo</h4>
+                    </div>
+                    <div class="weather-humidity">
+                        <h3>88%</h3>
+                        <h4>Umidade</h4>
+                    </div>
+                    <div class="weather-sunset">
+                        <h3>18:16</h3>
+                        <h4>Pôr do sol</h4>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <!-- Weather Secondary Info -->
+        <div class="container-weather-secondary-info">
+            <!--<h1 class="forecast-title">Previsão</h1>-->
+            <div class="slider">
+                <div class="slider-content owl-carousel owl-theme">
+                
+                    
+                </div>
+                <div class="btn-group-slider">
+                    <span class="btn-slide"></span>
+                </div>
+            </div>
+        </div> 
+        <!-- Weather Weekday Info -->
+        <div class="container-weather-weekday">
+            <!-- <div class="weather-weekday">
+                <h1 class="weather-weekday-name">Domingo</h1>
+                <div class="weather-weekday-info weather-weekday-active">
+                    <img src="img/full_cloud_sun.svg" alt="" class="weather-weekday-info-img">
+                    <div class="weather-weekday-info-card">
+                        <div class="weather-weekday-info-card-item">
+                            <h1 class="degree-high">23º</h1>
+                            <small>Alto</small>
+                        </div>
+                        <div class="weather-weekday-info-card-item">
+                            <h1 class="degree-low">23º</h1>
+                            <small>Baixo</small>
+                        </div>
+                    </div>
+                    <div class="weather-weekday-info-shift">
+                        <div class="weather-weekday-info-shift-sunrise">
+                            <img src="img/Sunrise.svg" alt="">
+                            <h2 class="weather-weekday-info-shift-time-1">6:18</h2>
+                        </div>
+                        <div class="weather-weekday-info-shift-sunset">
+                            <img src="img/Sunset.svg" alt="">
+                            <h2 class="weather-weekday-info-shift-time-2">18:08</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-weekday">
+                <h1 class="weather-weekday-name">Segunda</h1>
+                <div class="weather-weekday-info">
+                    <img src="img/full_cloud_sun.svg" alt="" class="weather-weekday-info-img">
+                    <div class="weather-weekday-info-card">
+                        <div class="weather-weekday-info-card-item">
+                            <h1 class="degree-high">23º</h1>
+                            <small>Alto</small>
+                        </div>
+                        <div class="weather-weekday-info-card-item">
+                            <h1 class="degree-low">23º</h1>
+                            <small>Baixo</small>
+                        </div>
+                    </div>
+                    <div class="weather-weekday-info-shift">
+                        <div class="weather-weekday-info-shift-sunrise">
+                            <img src="img/Sunrise.svg" alt="">
+                            <h2 class="weather-weekday-info-shift-time-1">6:18</h2>
+                        </div>
+                        <div class="weather-weekday-info-shift-sunset">
+                            <img src="img/Sunset.svg" alt="">
+                            <h2 class="weather-weekday-info-shift-time-2">18:08</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-weekday">
+                <h1 class="weather-weekday-name">Terça</h1>
+                <div class="weather-weekday-info">
+                    <img src="img/full_cloud_sun.svg" alt="" class="weather-weekday-info-img">
+                    <div class="weather-weekday-info-card">
+                        <div class="weather-weekday-info-card-item">
+                            <h1 class="degree-high">23º</h1>
+                            <small>Alto</small>
+                        </div>
+                        <div class="weather-weekday-info-card-item">
+                            <h1 class="degree-low">23º</h1>
+                            <small>Baixo</small>
+                        </div>
+                    </div>
+                    <div class="weather-weekday-info-shift">
+                        <div class="weather-weekday-info-shift-sunrise">
+                            <img src="img/Sunrise.svg" alt="">
+                            <h2 class="weather-weekday-info-shift-time-1">6:18</h2>
+                        </div>
+                        <div class="weather-weekday-info-shift-sunset">
+                            <img src="img/Sunset.svg" alt="">
+                            <h2 class="weather-weekday-info-shift-time-2">18:08</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-weekday">
+                <h1 class="weather-weekday-name">Quarta</h1>
+                <div class="weather-weekday-info">
+                    <img src="img/full_cloud_sun.svg" alt="" class="weather-weekday-info-img">
+                    <div class="weather-weekday-info-card">
+                        <div class="weather-weekday-info-card-item">
+                            <h1 class="degree-high">23º</h1>
+                            <small>Alto</small>
+                        </div>
+                        <div class="weather-weekday-info-card-item">
+                            <h1 class="degree-low">23º</h1>
+                            <small>Baixo</small>
+                        </div>
+                    </div>
+                    <div class="weather-weekday-info-shift">
+                        <div class="weather-weekday-info-shift-sunrise">
+                            <img src="img/Sunrise.svg" alt="">
+                            <h2 class="weather-weekday-info-shift-time-1">6:18</h2>
+                        </div>
+                        <div class="weather-weekday-info-shift-sunset">
+                            <img src="img/Sunset.svg" alt="">
+                            <h2 class="weather-weekday-info-shift-time-2">18:08</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-weekday">
+                <h1 class="weather-weekday-name">Quinta</h1>
+                <div class="weather-weekday-info">
+                    <img src="img/full_cloud_sun.svg" alt="" class="weather-weekday-info-img">
+                    <div class="weather-weekday-info-card">
+                        <div class="weather-weekday-info-card-item">
+                            <h1 class="degree-high">23º</h1>
+                            <small>Alto</small>
+                        </div>
+                        <div class="weather-weekday-info-card-item">
+                            <h1 class="degree-low">23º</h1>
+                            <small>Baixo</small>
+                        </div>
+                    </div>
+                    <div class="weather-weekday-info-shift">
+                        <div class="weather-weekday-info-shift-sunrise">
+                            <img src="img/Sunrise.svg" alt="">
+                            <h2 class="weather-weekday-info-shift-time-1">6:18</h2>
+                        </div>
+                        <div class="weather-weekday-info-shift-sunset">
+                            <img src="img/Sunset.svg" alt="">
+                            <h2 class="weather-weekday-info-shift-time-2">18:08</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-weekday">
+                <h1 class="weather-weekday-name">Sexta</h1>
+                <div class="weather-weekday-info">
+                    <img src="img/full_cloud_sun.svg" alt="" class="weather-weekday-info-img">
+                    <div class="weather-weekday-info-card">
+                        <div class="weather-weekday-info-card-item">
+                            <h1 class="degree-high">23º</h1>
+                            <small>Alto</small>
+                        </div>
+                        <div class="weather-weekday-info-card-item">
+                            <h1 class="degree-low">23º</h1>
+                            <small>Baixo</small>
+                        </div>
+                    </div>
+                    <div class="weather-weekday-info-shift">
+                        <div class="weather-weekday-info-shift-sunrise">
+                            <img src="img/Sunrise.svg" alt="">
+                            <h2 class="weather-weekday-info-shift-time-1">6:18</h2>
+                        </div>
+                        <div class="weather-weekday-info-shift-sunset">
+                            <img src="img/Sunset.svg" alt="">
+                            <h2 class="weather-weekday-info-shift-time-2">18:08</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-weekday">
+                <h1 class="weather-weekday-name">Sábado</h1>
+                <div class="weather-weekday-info">
+                    <img src="img/full_cloud_sun.svg" alt="" class="weather-weekday-info-img">
+                    <div class="weather-weekday-info-card">
+                        <div class="weather-weekday-info-card-item">
+                            <h1 class="degree-high">23º</h1>
+                            <small>Alto</small>
+                        </div>
+                        <div class="weather-weekday-info-card-item">
+                            <h1 class="degree-low">23º</h1>
+                            <small>Baixo</small>
+                        </div>
+                    </div>
+                    <div class="weather-weekday-info-shift">
+                        <div class="weather-weekday-info-shift-sunrise">
+                            <img src="img/Sunrise.svg" alt="">
+                            <h2 class="weather-weekday-info-shift-time-1">6:18</h2>
+                        </div>
+                        <div class="weather-weekday-info-shift-sunset">
+                            <img src="img/Sunset.svg" alt="">
+                            <h2 class="weather-weekday-info-shift-time-2">18:08</h2>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div> 
+    </div> 
+    <footer>
+        <h2>Desenvolvido com <i class="fas fa-heart"></i> usando vanilla.js</h2>
+        <h2>© 2020 Beans</h2>
+    </footer>
+    <!--Plugin For Slide-->
+        <!--I don't use'-->
+    <!--All APP-->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
