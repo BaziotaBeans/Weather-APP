@@ -21,7 +21,7 @@ for more information visit their platform https://openweathermap.org/api 🤡❤
 - You can add Axios and Babel using node.js to allow ours browser to run the app whitout problem
 
 ## :heart_eyes: Issues
-Feel free to tinker with the project and change it your way
+Feel free to tinker with the project and change it your way 
 
 ## :closed_book: License
 
